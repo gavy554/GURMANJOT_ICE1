@@ -51,15 +51,15 @@ Card[] magicHand = new Card[7];
         
         for (Card hand1 : magicHand) {
             
-            System.out.println(hand1);
+            System.out.println(hand1.getSuit()+ " " + hand1.getValue());
             if (magicCard.getSuit()==hand1.getSuit() && magicCard.getValue()==hand1.getValue()){
                     
                 printInfo();
                 break;
                 
-            }else{
-                System.out.println("Wrong Guess");
             }
+                System.out.println("Wrong Guess");
+            
         }
         
         
