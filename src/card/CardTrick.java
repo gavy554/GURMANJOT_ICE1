@@ -52,7 +52,7 @@ Card[] magicHand = new Card[7];
         for (Card hand1 : magicHand) {
             
             System.out.println(hand1);
-            if (userCard.getSuit()==hand1.getSuit() && userCard.getValue()==hand1.getValue()){
+            if (magicCard.getSuit()==hand1.getSuit() && magicCard.getValue()==hand1.getValue()){
                     
                 printInfo();
                 break;
