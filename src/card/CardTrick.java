@@ -52,12 +52,13 @@ Card[] magicHand = new Card[7];
         for (Card hand1 : magicHand) {
             
             System.out.println(hand1);
-            if (magicCard.getSuit()==hand1.getSuit()){
-                if (magicCard.getValue()==hand1.getValue()){
+            if (magicCard.getSuit()==hand1.getSuit() && magicCard.getValue()==hand1.getValue()){
                     
                 printInfo();
                 break;
-                }
+                
+            }else{
+                System.out.println("Wrong Guess");
             }
         }
         
@@ -65,7 +66,7 @@ Card[] magicHand = new Card[7];
     }
         
         private static void printInfo() {
-            System.out.println("You guessed it right");
+            System.out.println("Right Guess");
         }
     
 }
